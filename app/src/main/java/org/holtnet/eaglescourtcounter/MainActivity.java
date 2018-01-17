@@ -7,13 +7,34 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreTeamA = 0;
-    int scoreTeamB = 0;
+    static final String TEAM_A = "";
+    static final String TEAM_B = "";
+    private int scoreTeamA = 0;
+    private int scoreTeamB = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        // Save custom values into the bundle
+        savedInstanceState.putInt(TEAM_A, scoreTeamA);
+        savedInstanceState.putInt(TEAM_B, scoreTeamB);
+        // Always call the superclass so it can save the view hierarchy state
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        // Always call the superclass so it can restore the view hierarchy
+        super.onRestoreInstanceState(savedInstanceState);
+        // Restore state members from saved instance
+        scoreTeamA = savedInstanceState.getInt(TEAM_A);
+        scoreTeamB = savedInstanceState.getInt(TEAM_B);
     }
 
     public void displayForTeamA(int score) {
