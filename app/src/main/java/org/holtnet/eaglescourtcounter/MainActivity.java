@@ -7,10 +7,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    static final String TEAM_A = "";
-    static final String TEAM_B = "";
+    static String TEAM_A = "";
+    static String TEAM_B = "";
     private int scoreTeamA = 0;
     private int scoreTeamB = 0;
+    private TextView scoreViewTeamA;
+    private TextView scoreViewTeamB;
 
 
     @Override
@@ -35,16 +37,19 @@ public class MainActivity extends AppCompatActivity {
         // Restore state members from saved instance
         scoreTeamA = savedInstanceState.getInt(TEAM_A);
         scoreTeamB = savedInstanceState.getInt(TEAM_B);
+        setContentView(R.layout.activity_main);
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
     }
 
     public void displayForTeamA(int score) {
-        TextView scoreView = findViewById(R.id.team_a_score);
-        scoreView.setText(String.valueOf(score));
+        scoreViewTeamA = findViewById(R.id.team_a_score);
+        scoreViewTeamA.setText(String.valueOf(score));
     }
 
     public void displayForTeamB(int score) {
-        TextView scoreView = findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(score));
+        scoreViewTeamB = findViewById(R.id.team_b_score);
+        scoreViewTeamB.setText(String.valueOf(score));
     }
 
     public void threePointAdd(View view) {
