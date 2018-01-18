@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    static final String TEAM_A = "";
-    static final String TEAM_B = "";
+    static final String TEAM_A = "team_a";
+    static final String TEAM_B = "team_b";
     private int scoreTeamA = 0;
     private int scoreTeamB = 0;
     private TextView scoreViewTeamA;
@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         // Restore state members from saved instance
         scoreTeamA = savedInstanceState.getInt(TEAM_A);
         scoreTeamB = savedInstanceState.getInt(TEAM_B);
-        setContentView(R.layout.activity_main);
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
     }
