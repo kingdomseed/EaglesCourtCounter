@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    static String TEAM_A = "";
-    static String TEAM_B = "";
+    static final String TEAM_A = "";
+    static final String TEAM_B = "";
     private int scoreTeamA = 0;
     private int scoreTeamB = 0;
     private TextView scoreViewTeamA;
