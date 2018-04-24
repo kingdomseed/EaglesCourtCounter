@@ -11,8 +11,6 @@ public class MainActivity extends AppCompatActivity {
     static final String TEAM_B = "team_b";
     private int scoreTeamA = 0;
     private int scoreTeamB = 0;
-    private TextView scoreViewTeamA;
-    private TextView scoreViewTeamB;
 
 
     @Override
@@ -42,12 +40,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayForTeamA(int score) {
-        scoreViewTeamA = findViewById(R.id.team_a_score);
+        TextView scoreViewTeamA = findViewById(R.id.team_a_score);
         scoreViewTeamA.setText(String.valueOf(score));
     }
 
     public void displayForTeamB(int score) {
-        scoreViewTeamB = findViewById(R.id.team_b_score);
+        TextView scoreViewTeamB = findViewById(R.id.team_b_score);
         scoreViewTeamB.setText(String.valueOf(score));
     }
 

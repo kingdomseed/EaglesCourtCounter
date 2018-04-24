@@ -7,15 +7,15 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/prime"
-            android:alpha=".3"
             android:adjustViewBounds="true"
+            android:alpha=".3"
+            android:contentDescription="@string/content_des_eagle"
             android:scaleType="centerInside"
             android:src="@drawable/logo" />
 
@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:gravity="center_horizontal"
-                    android:text="Crowley Eagles"
+                    android:text="@string/crowley_eagles"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp" />
 
@@ -47,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:gravity="center_horizontal"
-                    android:text="0"
+                    android:text="@string/zero"
                     android:textColor="@color/colorPrimary"
                     android:textSize="56sp" />
 
@@ -60,7 +60,7 @@
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="24dp"
                     android:onClick="threePointAdd"
-                    android:text="+3 Points"
+                    android:text="@string/plus_three"
                     android:textAllCaps="true"
                     android:textColor="@color/colorAccent" />
 
@@ -72,7 +72,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="twoPointAdd"
-                    android:text="+2 Points"
+                    android:text="@string/plus_two"
                     android:textAllCaps="true"
                     android:textColor="@color/colorAccent" />
 
@@ -83,7 +83,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="freeThrowAdd"
-                    android:text="Free Throw"
+                    android:text="@string/free_throw"
                     android:textAllCaps="true"
                     android:textColor="@color/colorAccent" />
 
@@ -107,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:gravity="center_horizontal"
-                    android:text="That Other Team"
+                    android:text="@string/that_other_team"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp" />
 
@@ -117,7 +117,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:gravity="center_horizontal"
-                    android:text="0"
+                    android:text="@string/zero"
                     android:textColor="@color/colorPrimary"
                     android:textSize="56sp" />
 
@@ -130,7 +130,7 @@
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="24dp"
                     android:onClick="threePointAdd"
-                    android:text="+3 Points"
+                    android:text="@string/plus_three"
                     android:textAllCaps="true"
                     android:textColor="@color/colorAccent" />
 
@@ -142,7 +142,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="twoPointAdd"
-                    android:text="+2 Points"
+                    android:text="@string/plus_two"
                     android:textAllCaps="true"
                     android:textColor="@color/colorAccent" />
 
@@ -153,7 +153,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="freeThrowAdd"
-                    android:text="Free Throw"
+                    android:text="@string/free_throw"
                     android:textAllCaps="true"
                     android:textColor="@color/colorAccent" />
             </LinearLayout>
@@ -163,11 +163,11 @@
             android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_below="@id/prime"
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
             android:onClick="resetButton"
-            android:text="Reset"
+            android:text="@string/reset"
             android:textColor="@color/colorAccent" />
 
     </RelativeLayout>

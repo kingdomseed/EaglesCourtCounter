@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Eagle\'s Court Counter</string>
+    <string name="content_des_eagle">Crowley Eagle\'s logo as a background image.</string>
+    <string name="crowley_eagles">Crowley Eagles</string>
+    <string name="zero">0</string>
+    <string name="plus_three">+3 Points</string>
+    <string name="plus_two">+2 Points</string>
+    <string name="free_throw">Free Throw</string>
+    <string name="that_other_team">That Other Team</string>
+    <string name="reset">Reset</string>
 </resources>
