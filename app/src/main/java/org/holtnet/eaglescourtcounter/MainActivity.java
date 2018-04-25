@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         scoreViewTeamB.setText(String.valueOf(score));
     }
 
-    public void threePointAdd(View view) {
+    public void addThreePoints(View view) {
         if (view.getId() == R.id.teamAThree) {
             scoreTeamA += 3;
             displayForTeamA(scoreTeamA);
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void twoPointAdd(View view) {
+    public void addTwoPoints(View view) {
         if (view.getId() == R.id.teamATwo) {
             scoreTeamA += 2;
             displayForTeamA(scoreTeamA);
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void freeThrowAdd(View view) {
+    public void addOnePoint(View view) {
         if (view.getId() == R.id.teamAFree) {
             scoreTeamA++;
             displayForTeamA(scoreTeamA);
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void resetButton(View view) {
+    public void resetScoreButton(View view) {
         scoreTeamB = 0;
         scoreTeamA = 0;
         displayForTeamA(scoreTeamA);
